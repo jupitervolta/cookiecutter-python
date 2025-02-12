@@ -45,7 +45,7 @@
 
 ## Overview
 
-This template is the standard way to create a python package at Jupiter Volta. It is a fork from [cookiecutter-nist-python](https://github.com/usnistgov/cookiecutter-nist-python) with adaptations for Jupiter Volta's needs. Some of the documentation is still taken from the original template, so you may see some references and linksto NIST.
+This template is the standard way to create a python package at Jupiter Volta. It is a fork from [cookiecutter-nist-python](https://github.com/usnistgov/cookiecutter-nist-python) with adaptations for Jupiter Volta's needs. Some of the documentation is still taken from the original template, so you may see some references and links to NIST.
 
 ## Features
 
@@ -65,7 +65,7 @@ This template is the standard way to create a python package at Jupiter Volta. I
 To generate a package using [cookiecutter], run:
 
 ```bash
-cookiecutter [--checkout BRANCH-NAME] https://github.com/juptervolta/cookiecutter-python.git
+cookiecutter [--checkout BRANCH-NAME] https://github.com/jupitervolta/cookiecutter-python.git
 ```
 
 where the optional argument in brackets can be used to specify a specific
@@ -75,7 +75,7 @@ Alternatively (and highly recommended) is to use [cruft]. This allows for the
 template files to be updated as the template is updated. For this, you can run:
 
 ```bash
-cruft create [--checkout BRANCH-NAME] https://github.com/juptervolta/cookiecutter-python.git
+cruft create [--checkout BRANCH-NAME] https://github.com/jupitervolta/cookiecutter-python.git
 ```
 
 <!-- end-installation -->

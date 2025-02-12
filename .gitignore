@@ -114,7 +114,7 @@ cruft.patch
 /monkeytype.sqlite3
 /dist-conda/
 /tmp/
-/cookiecutter-nist-python-feedstock*/
+/cookiecutter-python-feedstock*/
 /src/**/_version.py
 tuna-loadtime.log
 /requirements/py*-dev.yaml

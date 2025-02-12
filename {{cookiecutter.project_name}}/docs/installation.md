@@ -2,16 +2,16 @@
 
 ## Stable release
 
-To install, run this command in your terminal:
+Use the following command to install the package from github.
 
 ```bash
-pip install {{ cookiecutter.project_name }}
+pip install git+https://github.com/jupitervolta/{{ cookiecutter.project_name }}.git
 ```
 
-or
+You can also install a specific branch or tag.
 
 ```bash
-conda install -c {{ cookiecutter.conda_channel }} {{ cookiecutter.project_name }}
+pip install git+https://github.com/jupitervolta/{{ cookiecutter.project_name }}.git@branch-or-tag-name
 ```
 
 This is the preferred method to install, as it will always install the most
