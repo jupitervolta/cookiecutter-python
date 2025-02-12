@@ -7,7 +7,7 @@ You can contribute in many ways:
 
 ## Types of Contributions
 
-[issues]: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/issues
+[issues]: https://github.com/jupitervolta/{{ cookiecutter.project_name }}/issues
 
 ### Report Bugs
 
@@ -55,14 +55,14 @@ Ready to contribute? Here's how to make a contribution.
 - Clone your fork locally:
 
   ```bash
-  git clone git@github.com:your_name_here/{{ cookiecutter.project_name }}.git
+  git clone git@github.com:jupitervolta/{{ cookiecutter.project_name }}.git
   ```
 
   If the repo includes submodules, you can add them either with the initial
   close using:
 
   ```bash
-  git clone --recursive-submodules git@github.com:your_name_here/{{ cookiecutter.project_name }}.git
+  git clone --recursive-submodules git@github.com:jupitervolta/{{ cookiecutter.project_name }}.git
   ```
 
   or after the clone using

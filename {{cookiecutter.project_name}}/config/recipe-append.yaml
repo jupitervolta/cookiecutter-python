@@ -7,12 +7,10 @@ test:
     - pip
 
 about:
-  home: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name}}
+  home: https://github.com/jupitervolta/{{ cookiecutter.project_name}}
   summary: {{ cookiecutter.project_short_description }}
   description: |
     {{ cookiecutter.project_short_description }}
-  license: NIST-PD
-  license_file: LICENSE
 
 extra:
   recipe-maintainers:

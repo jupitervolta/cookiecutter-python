@@ -7,7 +7,7 @@ You can contribute in many ways:
 
 ## Types of Contributions
 
-[issues]: https://github.com/wpk-nist-gov/mypackage/issues
+[issues]: https://github.com/jupitervolta/mypackage/issues
 
 ### Report Bugs
 

@@ -40,9 +40,9 @@ sys.path.pop(0)
 
 # * Names ------------------------------------------------------------------------------
 
-PACKAGE_NAME = "cookiecutter-nist-python"
-IMPORT_NAME = "cookiecutter_nist_python"
-KERNEL_BASE = "cookiecutter_nist_python"
+PACKAGE_NAME = "cookiecutter-python"
+IMPORT_NAME = "cookiecutter_python"
+KERNEL_BASE = "cookiecutter_python"
 
 # * nox options ------------------------------------------------------------------------
 

@@ -5,7 +5,6 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "{{ cookiecutter.project_name }}"
 authors = [{ name = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}", email = "{{ cookiecutter.email }}" }]
-license = { text = "NIST-PD" }
 description = "{{ cookiecutter.project_short_description }}"
 # if using markdown
 # long_description_content_type = text/markdown
@@ -34,8 +33,7 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name}}"
-documentation = "https://pages.nist.gov/{{ cookiecutter.project_name }}/"
+homepage = "https://github.com/jupitervolta/{{ cookiecutter.project_name}}"
 
 [project.optional-dependencies]
 test = [

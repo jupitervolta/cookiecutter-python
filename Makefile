@@ -104,7 +104,7 @@ pre-commit-codespell: ## run codespell. Note that this imports allowed words fro
 ################################################################################
 .PHONY: user-venv user-autoenv-zsh user-all
 user-venv: ## create .venv file with name of conda env
-	echo $${PWD}/.nox/cookiecutter-nist-python/envs/dev > .venv
+	echo $${PWD}/.nox/cookiecutter-python/envs/dev > .venv
 
 user-autoenv-zsh: ## create .autoenv.zsh files
 	echo conda activate $$(cat .venv) > .autoenv.zsh
@@ -124,7 +124,7 @@ test-accept: ## run tests and accept doctest results. (using pytest-accept)
 	DOCFILLER_SUB=False pytest -v --accept
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source cookiecutter_nist_python -m pytest
+	coverage run --source cookiecutter_python -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
@@ -139,7 +139,7 @@ version-scm: ## check/update version of package with setuptools-scm
 	python -m setuptools_scm
 
 version-import: ## check version from python import
-	-python -c 'import cookiecutter_nist_python; print(cookiecutter_nist_python.__version__)'
+	-python -c 'import cookiecutter_python; print(cookiecutter_python.__version__)'
 
 version: version-scm version-import
 
@@ -264,7 +264,7 @@ commitizen-changelog:
 # tuna analyze load time:
 .PHONY: tuna-analyze
 tuna-import: ## Analyze load time for module
-	python -X importtime -c 'import cookiecutter_nist_python' 2> tuna-loadtime.log
+	python -X importtime -c 'import cookiecutter_python' 2> tuna-loadtime.log
 	tuna tuna-loadtime.log
 	rm tuna-loadtime.log
 

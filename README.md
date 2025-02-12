@@ -19,7 +19,7 @@
 [repo-link]: https://github.com/usnistgov/cookiecutter-nist-python
 [license-badge]: https://img.shields.io/pypi/l/cmomy?color=informational
 [license-link]:
-  https://github.com/usnistgov/cookiecutter-nist-python/blob/main/LICENSE
+  https://github.com/jupitervolta/cookiecutter-python/blob/main/LICENSE
 
 <!-- other links -->
 
@@ -39,14 +39,13 @@
 [virtualenv]: https://virtualenv.pypa.io/en/latest/
 [pyproject2conda]: https://github.com/usnistgov/pyproject2conda
 
-# `cookiecutter-nist-python`
+# `cookiecutter-python`
 
-[Cookiecutter][cookiecutter] template for python packages at [NIST].
+[Cookiecutter][cookiecutter] template for python packages at Jupiter Volta.
 
 ## Overview
 
-This template includes all [NIST] specific branding for creating a python
-package.
+This template is the standard way to create a python package at Jupiter Volta. It is a fork from [cookiecutter-nist-python](https://github.com/usnistgov/cookiecutter-nist-python) with adaptations for Jupiter Volta's needs. Some of the documentation is still taken from the original template, so you may see some references and linksto NIST.
 
 ## Features
 
@@ -55,16 +54,9 @@ package.
 - Linting with [pre-commit]
 - Documentation with [Sphinx], [MyST], using either the [furo] or
   [sphinx-book-theme] theme.
-- Simple commands to upload package to [pypi], or a personal conda channel.
-- Simple commands to release documentation to [nist-pages]
 - Works with both [conda] and [virtualenv] based envronments.
 - Handle creation of `requirments.txt` and `environment.yaml` files with
   [pyproject2conda]
-
-## Status
-
-This package is actively used by the author. Please feel free to create a pull
-request for wanted features and suggestions!
 
 ## Quick start
 
@@ -73,7 +65,7 @@ request for wanted features and suggestions!
 To generate a package using [cookiecutter], run:
 
 ```bash
-cookiecutter [--checkout BRANCH-NAME] https://github.com/usnistgov/cookiecutter-nist-python.git
+cookiecutter [--checkout BRANCH-NAME] https://github.com/juptervolta/cookiecutter-python.git
 ```
 
 where the optional argument in brackets can be used to specify a specific
@@ -83,7 +75,7 @@ Alternatively (and highly recommended) is to use [cruft]. This allows for the
 template files to be updated as the template is updated. For this, you can run:
 
 ```bash
-cruft create [--checkout BRANCH-NAME] https://github.com/usnistgov/cookiecutter-nist-python.git
+cruft create [--checkout BRANCH-NAME] https://github.com/juptervolta/cookiecutter-python.git
 ```
 
 <!-- end-installation -->
@@ -91,7 +83,7 @@ cruft create [--checkout BRANCH-NAME] https://github.com/usnistgov/cookiecutter-
 
 ## Documentation
 
-See the [documentation][docs-link] for a look at `cookiecutter-nist-python` in
+See the [documentation][docs-link] for a look at `cookiecutter-python` in
 action.
 
 ## License
@@ -114,14 +106,6 @@ The following packages use this template:
 - [cookiecutter-pypackage]: The template on which this work is based.
 - [cookiecutter-hypermodern-python](https://github.com/cjolowicz/cookiecutter-hypermodern-python)
 
-## Contact
-
-The author can be reached at <wpk@nist.gov>.
-
 ## Credits
 
 This template started as a fork of [cookiecutter-pypackage].
-
-## TODO
-
-- [ ] Github actions/automation

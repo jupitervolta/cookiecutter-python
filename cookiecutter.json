@@ -1,9 +1,7 @@
 {
-  "full_name": "William P. Krekelberg",
-  "email": "wpk@nist.gov",
-  "github_username": "wpk-nist-gov",
-  "pypi_username": "wpk-nist",
-  "conda_channel": "{{ cookiecutter.pypi_username }}",
+  "full_name": "Jason Christopher",
+  "email": "jason@jvolta.com",
+  "github_username": "jupitervolta",
   "project_name": "mypackage",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "_copy_without_render": [

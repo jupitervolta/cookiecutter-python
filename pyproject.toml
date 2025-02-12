@@ -1,11 +1,11 @@
 [project]
-name = "cookiecutter-nist-python"
-authors = [{ name = "William P. Krekelberg", email = "wpk@nist.gov" }]
+name = "cookiecutter-python"
+authors = [{ name = "Jason Christopher", email = "jason@jvolta.com" }]
 license = { text = "NIST-PD" }
-description = "Cookiecutter template for NIST python package"
+description = "Cookiecutter template for Jupiter Volta python package"
 # if using markdown
 # long_description_content_type = text/markdown
-keywords = ["cookiecutter-nist-python"]
+keywords = ["cookiecutter-python"]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "License :: Public Domain",
@@ -24,7 +24,7 @@ requires-python = ">=3.8"
 dependencies = []
 
 [project.urls]
-homepage = "https://github.com/usnistgov/cookiecutter-nist-python"
+homepage = "https://github.com/juptervolta/cookiecutter-python"
 documentation = "https://pages.nist.gov/cookiecutter-nist-python/"
 
 [project.optional-dependencies]
@@ -44,8 +44,8 @@ typing-extras = [
     "mypy >= 1.4.1",
 ]
 typing = [
-    "cookiecutter-nist-python[typing-extras]", #
-    "cookiecutter-nist-python[test]",
+    "cookiecutter-python[typing-extras]", #
+    "cookiecutter-python[test]",
 ]
 nox = [
     "nox",
@@ -53,9 +53,9 @@ nox = [
     "ruamel.yaml",
 ]
 dev = [
-    "cookiecutter-nist-python[test]", #
-    "cookiecutter-nist-python[typing-extras]",
-    "cookiecutter-nist-python[dev-extras]",
+    "cookiecutter-python[test]", #
+    "cookiecutter-python[typing-extras]",
+    "cookiecutter-python[dev-extras]",
 ]
 tools = [
     "pre-commit", #
@@ -64,9 +64,9 @@ tools = [
     "pyright",
 ]
 dev-complete = [
-    "cookiecutter-nist-python[dev]", #
-    "cookiecutter-nist-python[tools]",
-    "cookiecutter-nist-python[nox]",
+    "cookiecutter-python[dev]", #
+    "cookiecutter-python[tools]",
+    "cookiecutter-python[nox]",
 ]
 docs = [
     "ipython", #
@@ -120,7 +120,7 @@ include = ["src/*"]
 [tool.isort]
 profile = "black"
 skip_gitignore = true
-known_first_party = ["cookiecutter_nist_python"]
+known_first_party = ["cookiecutter_python"]
 
 [tool.ruff]
 fix = true
@@ -181,7 +181,7 @@ exclude = [
     "node_modules",
     "venv",
     "tests/",
-    "src/cookiecutter_nist_python/tests",
+    "src/cookiecutter_python/tests",
 ]
 ignore = [
     # # whitespace before ':' - doesn't work well with black
@@ -219,7 +219,7 @@ per-file-ignores = {  }
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [tool.ruff.isort]
-known-first-party = ["cookiecutter_nist_python"]
+known-first-party = ["cookiecutter_python"]
 
 [tool.ruff.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
@@ -271,7 +271,7 @@ use_shortcuts = true
 [tool.cruft]
 
 [tool.mypy]
-files = ["src/cookiecutter_nist_python"]
+files = ["src/cookiecutter_python"]
 show_error_codes = true
 warn_unused_ignores = true
 warn_return_any = true

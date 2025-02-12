@@ -20,7 +20,7 @@
 """Build docs."""
 import os
 
-# import cookiecutter_nist_python
+# import cookiecutter_python
 
 # -- General configuration ---------------------------------------------
 
@@ -109,18 +109,17 @@ nb_execution_mode = "cache"
 # nb_execution_mode = "auto"
 
 # set the kernel name
-nb_kernel_rgx_aliases = {"cookiecutter-nist-python.*": "python3", "conda.*": "python3"}
+nb_kernel_rgx_aliases = {"cookiecutter-python.*": "python3", "conda.*": "python3"}
 
 nb_execution_allow_errors = True
 
 # - top level variables --------------------------------------------------------
 # set github_username variable to be subbed later.
-# this makes it easy to switch from wpk -> usnistgov later
-github_username = "usnistgov"
+github_username = "jupitervolta"
 
 html_context = {
-    "github_user": "usnistgov",
-    "github_repo": "cookiecutter-nist-python",
+    "github_user": "jupitervolta",
+    "github_repo": "cookiecutter-python",
     "github_version": "main",
     "doc_path": "docs",
 }
@@ -222,9 +221,9 @@ source_suffix = {
 master_doc = "index"
 
 # General information about the project.
-project = "cookiecutter-nist-python"
-copyright = "2023, William P. Krekelberg"
-author = "William P. Krekelberg"
+project = "cookiecutter-python"
+copyright = "2025, Jason Christopher"
+author = "Jason Christopher"
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -239,15 +238,15 @@ author = "William P. Krekelberg"
 #     version = get_version(root="..", relative_to=__file__)
 #     release = version
 # except ImportError:
-#     version = cookiecutter_nist_python.__version__
+#     version = cookiecutter_python.__version__
 #     # The full version, including alpha/beta/rc tags.
-#     release = cookiecutter_nist_python.__version__
+#     release = cookiecutter_python.__version__
 # def _get_version():
 #     import os
 
 #     version = os.environ.get("SETUPTOOLS_SCM_PRETEND_VERSION", None)
 #     if version is None:
-#         version = cookiecutter_nist_python.__version__
+#         version = cookiecutter_python.__version__
 #     return version
 
 
@@ -290,7 +289,7 @@ html_theme = "sphinx_book_theme"
 html_theme_options = dict(
     # analytics_id=''  this is configured in rtfd.io
     # canonical_url="",
-    repository_url=f"https://github.com/{github_username}/cookiecutter-nist-python",
+    repository_url=f"https://github.com/{github_username}/cookiecutter-python",
     repository_branch=html_context["github_version"],
     path_to_docs=html_context["doc_path"],
     # use_edit_page_button=True,
@@ -345,7 +344,7 @@ html_last_updated_fmt = today_fmt
 # -- Options for HTMLHelp output ---------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "cookiecutter_nist_pythondoc"
+htmlhelp_basename = "cookiecutter_pythondoc"
 
 
 # -- Options for LaTeX output ------------------------------------------
@@ -371,9 +370,9 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "cookiecutter_nist_python.tex",
-        "cookiecutter-nist-python Documentation",
-        "William P. Krekelberg",
+        "cookiecutter_python.tex",
+        "cookiecutter-python Documentation",
+        "Jason Christopher",
         "manual",
     ),
 ]
@@ -386,8 +385,8 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "cookiecutter_nist_python",
-        "cookiecutter-nist-python Documentation",
+        "cookiecutter_python",
+        "cookiecutter-python Documentation",
         [author],
         1,
     ),
@@ -402,10 +401,10 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "cookiecutter_nist_python",
-        "cookiecutter-nist-python Documentation",
+        "cookiecutter_python",
+        "cookiecutter-python Documentation",
         author,
-        "cookiecutter_nist_python",
+        "cookiecutter_python",
         "One line description of project.",
         "Miscellaneous",
     ),
@@ -473,9 +472,9 @@ linkcheck_ignore = ["https://doi.org/"]
 #     else:
 #         linespec = ""
 
-#     fn = os.path.relpath(fn, start=os.path.dirname(cookiecutter_nist_python.__file__))
+#     fn = os.path.relpath(fn, start=os.path.dirname(cookiecutter_python.__file__))
 
-#     return f"https://github.com/{github_username}/cookiecutter-nist-python/blob/{html_context['github_version']}/src/cookiecutter_nist_python/{fn}{linespec}"
+#     return f"https://github.com/{github_username}/cookiecutter-python/blob/{html_context['github_version']}/src/cookiecutter_python/{fn}{linespec}"
 
 
 # only set spelling stuff if installed:
